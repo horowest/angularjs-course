@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>First Filter</title>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-app="myFilterApp">
+  <h1>First Filter</h1>
+  <div ng-controller="myController">
+  	Original: {{sayMessage()}} <br> 
+  	Filtered: {{sayLovesMessage()}} <br>
+  	Truth: {{sayLovesMessage() | truth: "healthy" : "cookie"}} <br>
+  	BIG TRUTH: {{sayLovesMessage() | truth: "healthy" : "cookie" | uppercase}}
+  	<br>
+  	{{stateOfBeing}} | {{message}}
+  	<button ng-click="feedAkash();">Feed Akash</button>
+  </div>
+</body>
+</html>

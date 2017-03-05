@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Watchers</title>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-app="watcherApp">
+  <h1>Watchers!</h1>
+  <div ng-controller="myController">
+  	<div>
+  		<button ng-click="showNumberOfWatchers();">Log watchers</button>  
+  		<button ng-click="countOnes();">Ones Counter</button>
+  	</div>
+  	<div>
+  		Counter: {{counter}}
+  	</div>
+  </div>
+</body>
+</html>
